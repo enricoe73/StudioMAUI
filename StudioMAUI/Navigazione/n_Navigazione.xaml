@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudioMAUI.n_Navigazione"
+             Title="n_Navigazione"
+             BackgroundColor="White">
+    <StackLayout Spacing="25">
+        <Label 
+                Text="Finestra da cui lanciare gli esempi di navigazione" 
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="22"
+                HorizontalOptions="Center" />
+        <Button 
+                Text="Apri prima navigazione"
+                FontAttributes="Bold" 
+                SemanticProperties.Hint="Apri Prima Navigazione"
+                Clicked="OnApriPrima"
+                HorizontalOptions="Center" />
+
+
+    </StackLayout>
+</ContentPage>

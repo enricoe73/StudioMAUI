@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudioMAUI.n_PrimaFinestra"
+             Title="n_PrimaFinestra"
+             BackgroundColor="White">
+    <StackLayout Spacing="25">
+
+        <Label Text="Prima finestra di navigazione"
+                VerticalOptions="Center" 
+                 FontSize="22"
+                HorizontalOptions="Center" />
+
+        <Button 
+                Text="Apri seconda finestra"
+                FontAttributes="Bold"  
+                Clicked="OnApriPrima"
+                HorizontalOptions="Center" />
+
+        <Button 
+                Text="Indietro"
+                FontAttributes="Bold"  
+                Clicked="OnIndietroFinestra"
+                HorizontalOptions="Center" />
+
+        
+
+        <Button 
+                Text="Add overlay"
+                FontAttributes="Bold"
+                Grid.Row="6"
+                SemanticProperties.Hint="add overlay"
+                Clicked="AddOverlay"
+                HorizontalOptions="Center" />
+
+        <Image Grid.Row="7"
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="250"
+                HeightRequest="310"
+                HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>

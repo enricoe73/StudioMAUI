@@ -9,8 +9,7 @@
               Padding="{OnPlatform iOS='30,60,30,30', Default='30'}">
 
             <Label 
-                Text="Hello, World!"
-                Grid.Row="0"
+                Text="Hello, World!" 
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
@@ -39,11 +38,12 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
-            <Image Grid.Row="4"
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                WidthRequest="250"
-                HeightRequest="310"
+            <Button 
+                Text="Navigazione"
+                FontAttributes="Bold"
+                Grid.Row="4"
+                SemanticProperties.Hint="Apre finestra navigazione"
+                Clicked="OnNavigazione"
                 HorizontalOptions="Center" />
 
         </Grid>

@@ -16,5 +16,18 @@ public partial class MainPage : ContentPage
 
 		SemanticScreenReader.Announce(CounterLabel.Text);
 	}
+
+
+	private void OnNavigazione(object sender, EventArgs e)
+	{
+
+		var secondWindow = new Window
+		{
+			Page = new n_Navigazione()
+		};
+		Application.Current.OpenWindow(secondWindow);
+	}
+
 }
+
 
