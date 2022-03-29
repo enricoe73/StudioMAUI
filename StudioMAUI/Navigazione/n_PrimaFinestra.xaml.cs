@@ -7,7 +7,7 @@ public partial class n_PrimaFinestra : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnApriPrima(object sender, EventArgs e)
+	private void OnApriSeconda(object sender, EventArgs e)
 	{ 
 		var secondaNavigazione = new Window
 		{
@@ -15,7 +15,16 @@ public partial class n_PrimaFinestra : ContentPage
 		};
 		Application.Current.OpenWindow(secondaNavigazione);
 	}
+	
 
+	private async void OnNavigaIndietro(object sender, EventArgs e)
+	{
+		await Variables.nv.PopAsync();	
+	}
+	private async void OnNavigaSeconda(object sender, EventArgs e)
+	{
+		await Variables.nv.PushAsync(new n_SecondaFinestra());
+	}
 
 	private void OnIndietroFinestra(object sender, EventArgs e)
 	{

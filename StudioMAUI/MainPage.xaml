@@ -45,6 +45,14 @@
                 SemanticProperties.Hint="Apre finestra navigazione"
                 Clicked="OnNavigazione"
                 HorizontalOptions="Center" />
+            
+            <Button 
+                Text="NavigationPage"
+                FontAttributes="Bold"
+                Grid.Row="4"
+                SemanticProperties.Hint="Apre finestra navigazione NavigationPage "
+                Clicked="OnNavigationPage"
+                HorizontalOptions="Center" />
 
         </Grid>
     </ScrollView>

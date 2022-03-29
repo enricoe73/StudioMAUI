@@ -14,7 +14,7 @@
         <Button 
                 Text="Apri seconda finestra"
                 FontAttributes="Bold"  
-                Clicked="OnApriPrima"
+                Clicked="OnApriSeconda"
                 HorizontalOptions="Center" />
 
         <Button 
@@ -23,8 +23,18 @@
                 Clicked="OnIndietroFinestra"
                 HorizontalOptions="Center" />
 
-        
 
+        <Button 
+                Text="Naviga seconda finestra"
+                FontAttributes="Bold"  
+                Clicked="OnNavigaSeconda"
+                HorizontalOptions="Center" />
+
+        <Button 
+                Text="Naviga indietro"
+                FontAttributes="Bold"  
+                Clicked="OnNavigaIndietro"
+                HorizontalOptions="Center" />
         <Button 
                 Text="Add overlay"
                 FontAttributes="Bold"

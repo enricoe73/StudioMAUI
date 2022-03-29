@@ -27,6 +27,18 @@ public partial class MainPage : ContentPage
 		};
 		Application.Current.OpenWindow(secondWindow);
 	}
+	private void OnNavigationPage(object sender, EventArgs e)
+	{
+
+		var rootNavigationPage = new NavigationPage(new n_Navigazione());
+		Variables.ap.MainPage = rootNavigationPage;
+		Variables.nv = rootNavigationPage;
+
+
+	}
+
+
+	
 
 }
 

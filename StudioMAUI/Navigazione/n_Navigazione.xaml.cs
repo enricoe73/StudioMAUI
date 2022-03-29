@@ -17,4 +17,9 @@ public partial class n_Navigazione : ContentPage
 		Application.Current.OpenWindow(primaNavigazione);
 	}
 
+	private async void OnNavigaPrima(object sender, EventArgs e)
+	{
+		await Variables.nv.PushAsync(new n_PrimaFinestra());
+	}
+
 }

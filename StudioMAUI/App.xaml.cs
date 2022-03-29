@@ -7,5 +7,16 @@ public partial class App : Application
 		InitializeComponent();
 
 		MainPage = new MainPage();
+
+		Variables.ap = this;
+
 	}
+
+}
+
+public static class Variables {
+
+    public static Application ap { get; set; }
+	public static NavigationPage nv { get; set; }
+
 }

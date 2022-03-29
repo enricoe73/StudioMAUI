@@ -17,6 +17,13 @@
                 Clicked="OnApriPrima"
                 HorizontalOptions="Center" />
 
+        <Button 
+                Text="Naviga Prima"
+                FontAttributes="Bold" 
+                SemanticProperties.Hint="Apri Prima Navigazione"
+                Clicked="OnNavigaPrima"
+                HorizontalOptions="Center" />
+
 
     </StackLayout>
 </ContentPage>
