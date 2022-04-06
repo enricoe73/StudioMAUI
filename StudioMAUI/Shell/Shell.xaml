@@ -80,7 +80,7 @@
 
         <ShellContent Title="PrimaDue" Route="monkeys"  Style="{StaticResource MonkeysShell}"  Icon="monkey.png" ContentTemplate="{DataTemplate Pages:n_PrimaFinestra}" />
         <ShellContent Title="Elephants"  Route="elephants"  Style="{StaticResource ElephantsShell}"  Icon="dog.png" ContentTemplate="{DataTemplate Pages:n_PrimaFinestra}" />
-        <ShellContent Title="PrimaDue"  Route="bears"  Style="{StaticResource BearsShell}"  Icon="bear.png" ContentTemplate="{DataTemplate Pages:n_PrimaFinestra}" />
+        <ShellContent Title="Aerei"  Route="aerei"  Style="{StaticResource BearsShell}"  Icon="airplane.png" ContentTemplate="{DataTemplate local:AirplanesList}" />
 
 
     </FlyoutItem>
@@ -93,10 +93,9 @@
                   Icon="info.png"
                   ContentTemplate="{DataTemplate Pages:n_SecondaFinestra}" />
     
-    <MenuItem Text="Help"
+    <MenuItem Text="Esci"
               IconImageSource="help.png"
-              Command="{Binding HelpCommand}"
-              CommandParameter="https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell" />
+              Command="{Binding HelpCommand}"  />
 
 
     <!--<TabBar>

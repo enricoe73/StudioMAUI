@@ -58,8 +58,14 @@
                 Clicked="OnNavigationPage"
                 HorizontalOptions="Center" />
 
+             <Button 
+                Text="Click me"
+                FontAttributes="Bold"
+                Grid.Row="3"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" /> 
 
-           
 
         </Grid>
     </ScrollView>

@@ -1,4 +1,6 @@
-﻿namespace StudioMAUI;
+﻿using Newtonsoft.Json;
+
+namespace StudioMAUI;
 
 public partial class MainPage : ContentPage
 {
@@ -26,6 +28,17 @@ public partial class MainPage : ContentPage
 		Variables.nv = rootNavigationPage; 
 	}
 
+	private void OnCounterClicked(object sender, EventArgs e)
+	{
+
+		var client = new HttpClient();
+		var json =  client.GetStringAsync("https://www.cliffordagius.co.uk/data/Airplanes.json").Result ;
+
+		this.DisplayAlert("Messaggio", json.ToString(), "Ok");
+
+	}
+
+	
 
 
 
