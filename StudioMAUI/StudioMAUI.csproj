@@ -58,6 +58,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\back.png" />
+	  <None Remove="Resources\Images\bear.png" />
+	  <None Remove="Resources\Images\cat.png" />
+	  <None Remove="Resources\Images\dog.png" />
+	  <None Remove="Resources\Images\elephant.png" />
+	  <None Remove="Resources\Images\help.png" />
+	  <None Remove="Resources\Images\info.png" />
+	  <None Remove="Resources\Images\monkey.png" />
+	  <None Remove="Resources\Images\paw.png" />
+	  <None Remove="Resources\Images\photo.jpg" />
+	  <None Remove="Resources\Images\random.png" />
+	  <None Remove="Resources\Images\xamarinstore.jpg" />
+	  <None Remove="Resources\Images\xamarin_logo.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	  <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
 	</ItemGroup>
