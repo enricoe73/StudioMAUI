@@ -8,6 +8,8 @@ public partial class App : Application
 
 		MainPage = new MainPage();
 
+	//	MainPage = new AppShell();
+
 		Variables.ap = this;
 
 	}

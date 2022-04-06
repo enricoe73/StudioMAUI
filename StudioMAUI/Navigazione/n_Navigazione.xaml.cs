@@ -21,5 +21,15 @@ public partial class n_Navigazione : ContentPage
 	{
 		await Variables.nv.PushAsync(new n_PrimaFinestra());
 	}
+	 
+	private void OnNavigaShell(object sender, EventArgs e)
+	{
+		// Funziona qui solo se si passa dalla navigation 
+		Variables.ap.MainPage = new AppShell();
+
+	}
+
+
+
 
 }

@@ -25,5 +25,13 @@
                 HorizontalOptions="Center" />
 
 
+        <Button 
+                Text="Applica Shell"
+                FontAttributes="Bold" 
+                Clicked="OnNavigaShell"
+                HorizontalOptions="Start" />
+
+
+
     </StackLayout>
 </ContentPage>

@@ -8,15 +8,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
-		CounterLabel.Text = $"Current count: {count}";
-
-		SemanticScreenReader.Announce(CounterLabel.Text);
-	}
-
+	 
 
 	private void OnNavigazione(object sender, EventArgs e)
 	{
@@ -28,17 +20,14 @@ public partial class MainPage : ContentPage
 		Application.Current.OpenWindow(secondWindow);
 	}
 	private void OnNavigationPage(object sender, EventArgs e)
-	{
-
+	{ 
 		var rootNavigationPage = new NavigationPage(new n_Navigazione());
 		Variables.ap.MainPage = rootNavigationPage;
-		Variables.nv = rootNavigationPage;
-
-
+		Variables.nv = rootNavigationPage; 
 	}
 
 
-	
+
 
 }
 

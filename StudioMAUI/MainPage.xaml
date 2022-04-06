@@ -22,37 +22,44 @@
                 FontSize="18"
                 HorizontalOptions="Center" />
 
-            <Label 
+            <!--<Label 
                 Text="Current count: 0"
                 Grid.Row="2"
                 FontSize="18"
                 FontAttributes="Bold"
                 x:Name="CounterLabel"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
 
-            <Button 
+            <!--<Button 
                 Text="Click me"
                 FontAttributes="Bold"
                 Grid.Row="3"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
 
+            <!--
+            Praticamente inutilizzabile, su ios da errore
             <Button 
-                Text="Navigazione"
+                Text="Usa Navigazione Manuale"
                 FontAttributes="Bold"
-                Grid.Row="4"
+                Grid.Row="3"
+                Grid.Column="1"
                 SemanticProperties.Hint="Apre finestra navigazione"
                 Clicked="OnNavigazione"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
             
             <Button 
-                Text="NavigationPage"
+                Text="Imposta Navigation Page"
                 FontAttributes="Bold"
                 Grid.Row="4"
+                Grid.Column="2"
                 SemanticProperties.Hint="Apre finestra navigazione NavigationPage "
                 Clicked="OnNavigationPage"
                 HorizontalOptions="Center" />
+
+
+           
 
         </Grid>
     </ScrollView>
