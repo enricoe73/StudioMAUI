@@ -32,17 +32,20 @@ namespace StudioMAUI.ViewModels
 
                 // Grab the data from the web with a bog standard HTTPClient call...
                 var client = new HttpClient();
+
                 var json = await client.GetStringAsync("https://www.cliffordagius.co.uk/data/Airplanes.json");
                 var airplanes = JsonConvert.DeserializeObject<List<Airplane>>(json);
 
+               
                 //  Clear the Collection to make sure we are not adding to a full list...
                 Airplanes.Clear();
-
+                  
                 //  Add them all to the ObserableCollection.
                 foreach (var airplane in airplanes)
                 {
                     Airplanes.Add(airplane);
                 }
+                await Application.Current.MainPage.DisplayAlert("Messaggio", "3", "Ok");
             }
             catch (Exception ex)
             {
@@ -54,7 +57,9 @@ namespace StudioMAUI.ViewModels
             {
                 // Set it to false to hide the Activity Indicator...
                 IsBusy = false;
+                await Application.Current.MainPage.DisplayAlert("Messaggio", "3", "Ok");
             }
+            await Application.Current.MainPage.DisplayAlert("Messaggio", "4", "Ok");
         }
     }
 }
